@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5
 }
 
 :root{
@@ -386,7 +385,6 @@ img{
     border-radius: 12px;
     background-color: #1F2326;
     color: var(--secondary-color);
-    margin: 15px 0;
     font-size: 0.5rem;
     font-weight: 100;
     display: flex;
@@ -496,7 +494,7 @@ img{
 }
 
 .professional-package-btn{
-    margin-top: 15px;
+    margin: 15px 0;
     background-color: #E3FFCC;
     color: var(--primary-color);
     font-size: 0.5rem;
@@ -619,6 +617,14 @@ label{
     top: -7px;
     font-weight: 200;
     font-size: 0.75rem;
+}
+
+.input-group .icon{
+    position: absolute;
+    right: 10%;
+    top: 9px;
+    transform: scale(0.8);
+    color: var(--primary-color);
 }
 
 .form-btn-container{
@@ -775,4 +781,175 @@ hr{
     margin: 0 auto;
     background-color: #DEE2E7;
   }    
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav img {
+        max-width: 70px;
+        left: 0;
+    }
+
+    .nav-bar {
+        position: static;
+        transform: none;
+        width: 100%;
+        order: 3;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        justify-content: center;
+    }
+
+    .nav .btn {
+        display: none;
+    }
+
+    #home {
+        height: auto;
+        padding: 20px 12px 40px;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 1.8rem;
+        padding-top: 20px;
+    }
+
+    .btn-container,
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .ratings {
+        transform: none;
+    }
+
+    .flex-container {
+        height: auto;
+        transform: none;
+        gap: 12px;
+        padding: 0 10px;
+        margin-top: 15px;
+    }
+
+    .flex-box,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5 {
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+    }
+
+    .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover{
+        transform: none;
+    }
+
+    #services,
+    #packages,
+    #contact-us {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .services-title,
+    .packages-title,
+    .contact-us-title {
+        width: calc(100% - 20px);
+        font-size: 1.1rem;
+        padding-top: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        width: calc(100% - 30px);
+        gap: 15px;
+    }
+
+    .packages-flexbox {
+        width: calc(100% - 40px);
+        height: auto;
+    }
+
+    .packages-container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .packages-container .package,
+    .professional-package {
+        width: 100%;
+        height: auto;
+    }
+
+    .professional-package .desc {
+        width: 90%;
+    }
+
+    .contact-us-desc {
+        width: 90%;
+    }
+
+    .form-container {
+        width: calc(100% - 40px);
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+    }
+
+    .footer-container > div {
+        width: 100%;
+    }
+
+    .flexbox1 {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .flexbox1 p {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    hr{
+        margin-top: 15px;
+    }
+
+    .final-footer {
+        flex-direction: column;
+        gap: 8px;
+        padding: 15px 20px;
+        margin: 0 auto;
+    }
+
+    .final-footer p{
+        padding: 0;
+    }
 }
